@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 
 /**
- * 配置文件类，必须要被扫描
+ * 配置文件类，必须要被扫描，参数读取一定要和配置文件中的一样
  */
 @Component
 public class BlogProperties {

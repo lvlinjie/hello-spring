@@ -1,0 +1,35 @@
+spring:
+    ########################################################
+    ###REDIS (RedisProperties) redis基本配置；
+    ########################################################
+    redis:
+        database: 0
+        host: localhost
+        password: ''
+        pool:
+            max-active: 8
+            max-idle: 8
+            max-wait: -1
+            min-idle: 0
+        port: 6379
+        timeout: 0
+      ########################################################
+      ###datasource 配置MySQL数据源；
+      ########################################################
+    datasource:
+      url: jdbc:mysql://localhost:3306/testing
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+    ########################################################
+    ### Java Persistence Api自动进行建表
+    ########################################################
+    jpa:
+      database: MYSQL
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+        
+
+
+

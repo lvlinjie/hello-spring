@@ -1,4 +1,4 @@
-package com.spdb.lvlj.springcache;
+package com.spdb.lvlj.doamin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

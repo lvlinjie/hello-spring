@@ -20,7 +20,8 @@ public class TestController {
 
     @GetMapping("/test2")
     /**
-     * 可以直接从url中获取name pwd的属性值。
+     * 可以直接从url中获取name pwd的属性值，url参数名和控制器参数名不一样时，可以在控制器参数名之前指定@RequestParam绑定的参数
+     *@RequestParam还可以指定默认值，也可以指定这个参数是必须要提供的，如果不提供，就报错，
      */
     public String test2(@RequestParam(value = "tt") String name, String pwd){
         return name+"-------------"+pwd;

@@ -5,14 +5,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.io.Serializable;
-@Entity(name = "DemoInfo")
+
+
+@Entity(name = "DemoInfo") //这里，制定的是数据库中哪一个表，如果没有这个表，jpa会帮我们创建一下
 public class DemoInfo implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    @Id
+    @Id   //指定数据的id和主键策略
     @GeneratedValue
     private long id;
-    @Column(name = "name")
+    @Column(name = "name") //对应表中哪一个字段的名称
     private String name;
     @Column(name = "pwd")
     private String pwd;

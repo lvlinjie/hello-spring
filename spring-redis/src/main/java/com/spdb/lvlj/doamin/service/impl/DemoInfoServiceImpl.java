@@ -24,7 +24,7 @@ public class DemoInfoServiceImpl implements DemoInfoService {
     private RedisTemplate<String,String> redisTemplate;
 
 
-    //keyGenerator="myKeyGenerator"
+
     @Cacheable(value="demoInfo") //缓存,这里没有指定key.
     @Override
     public DemoInfo findById(long id) {

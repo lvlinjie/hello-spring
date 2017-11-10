@@ -1,6 +1,7 @@
 package com.spdb.lvlj.doamin.controller;
 
 
+import com.spdb.lvlj.doamin.dao.DemoInfoRepository;
 import com.spdb.lvlj.doamin.pojo.DemoInfo;
 import com.spdb.lvlj.doamin.service.DemoInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,10 @@ public class DemoInfoController {
 
     @Autowired
     DemoInfoService demoInfoService;
+
+    @Autowired
+    private DemoInfoRepository demoInfoRepository;
+
     @GetMapping("/test")
     public String test(){
         DemoInfo loaded = demoInfoService.findById(1);
@@ -36,6 +41,9 @@ public class DemoInfoController {
         System.out.println("DemoInfoController.test1()");
         return"ok";
     }
+
+
+
 
 
 }

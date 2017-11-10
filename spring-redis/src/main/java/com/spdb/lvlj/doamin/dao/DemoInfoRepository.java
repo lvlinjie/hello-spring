@@ -1,7 +1,6 @@
 package com.spdb.lvlj.doamin.dao;
 
 import com.spdb.lvlj.doamin.pojo.DemoInfo;
-import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /*
@@ -9,5 +8,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 *JpaRepository<DemoInfo,Long>，第一个是pojo，第二个是这个Pojo的铸件类型
 */
 public interface DemoInfoRepository extends JpaRepository<DemoInfo,Long> {
+
 
 }
